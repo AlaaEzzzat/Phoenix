@@ -1,0 +1,66 @@
+.services{
+padding-top: 70px;
+}
+.services .banner{
+  position: relative;
+  background-image: url("./../../../../assets/img/healthcare-banner3.jpg");
+  background-position: center;
+background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+}
+.services .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(000, 000, 000, .3);
+  z-index: 1;
+}
+.services .banner .content{
+  position: relative;
+  z-index: 2;
+  color: #FFF;
+  text-align: center;
+  min-height: 90vh;
+}
+.services .banner .content h1{
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 45px;
+}
+.services .banner .content h3{
+  text-transform: capitalize;
+}
+.services .serv1{
+  padding: 70px 0;
+
+}
+.serv1  p{
+  padding-left: 20px;
+}
+.serv2 p{
+  padding-right: 20px;
+}
+.serv1  p,
+ .serv2 p{
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.img-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serv1 .img, .serv2 .img{
+  width: 70%;
+  box-shadow: 0 0 12px #777;
+}
+.serv2{
+  background-color: #e8e8e8;
+  padding: 70px 0;
+}

@@ -1,0 +1,27 @@
+.lifeOverview{
+  padding: 70px 20px
+}
+.lifeOverview .badge{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color:#604385;
+}
+.lifeOverview .card{
+  padding:30px 20px 20px 20px;
+  position:relative;
+  box-shadow: 0 0 10px 2px #b3129f;
+  background: linear-gradient(to right,#e9892f 0%, #FC466B 50%, #604385 100%);
+
+  margin: 10px 0
+}
+.lifeOverview .card .card-title{
+  font-size: 16px;
+  color:#FFF;
+  line-height: 1.7;
+  font-weight: 500;
+
+}
+.lifeOverview .head{
+  margin-top: 30px;
+}

@@ -1,0 +1,15 @@
+<div class="lifeOverview">
+  <div class="container-fluid">
+    <h1 class="text-center mb-5 head">Life Science</h1>
+    <div class="row">
+      <ng-container *ngFor="let item of lifeItem; let i = index">
+        <div class="col-md-4">
+          <div class="card">
+            <span class="badge">{{ i + 1 }}</span>
+            <p class="card-title">{{ item }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

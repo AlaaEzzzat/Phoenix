@@ -1,0 +1,22 @@
+<div class="models">
+  <div class="container-fluid">
+    <h1>Life Sciences Business Models Adopted</h1>
+    <ng-container *ngFor="let item of modelItems; let i = index">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <h5 class="card-subtitle">{{ item.title }}</h5>
+            <ul>
+              <ng-container *ngFor="let desc of item.desc; let y = index">
+                <li>{{ desc }}</li>
+              </ng-container>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="" alt="image" />
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+<label for="openSidebarMenu" class="sidebarIconToggle">
+  <div class="spinner diagonal part-1"></div>
+  <div class="spinner horizontal"></div>
+  <div class="spinner diagonal part-2"></div>
+</label>
+<div id="sidebarMenu">
+  <div class="sidebarMenuInner">
+    <ul class="p-0">
+      <li class="heading" (click)="myshow(health.id)">
+        <a class="link">Healthcare</a>
+        <i [class]="healthArrow" class="ms-2"></i>
+        <div [hidden]="healthcare" id="health" #health>
+          <ul>
+            <li class="myLink">
+              <a routerLink="healthcare/healthcareOverview" class="d-block link"
+                >Overview</a
+              >
+            </li>
+            <li class="myLink">
+              <a routerLink="healthcare/healthcareTarget" class="d-block link"
+                >Healthcare target Audience</a
+              >
+            </li>
+            <li class="myLink">
+              <a routerLink="healthcare/healthcareServices" class="d-block link"
+                >Services</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="heading" (click)="myshow(lifeCycle.id)">
+        <a class="link">Life Science</a>
+        <i [class]="lifeArrow" class="ms-2"></i>
+        <div [hidden]="life" id="lifeCycle" #lifeCycle>
+          <ul>
+            <li class="myLink">
+              <a
+                routerLink="lifeScience/LifeOverviewComponent"
+                class="d-block link"
+                >Overview</a
+              >
+            </li>
+            <li class="myLink">
+              <a
+                routerLink="lifeScience/LifeBusinessComponent"
+                class="d-block link"
+                >Life Science Business Models</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="heading">
+        <a routerLink="" class="link">Genatic Screening &amp; Selection</a>
+      </li>
+      <li class="heading" (click)="myshow(Organizational.id)">
+        <a class="link">Organizational</a>
+        <i [class]="OrganizationalArrow" class="ms-2"></i>
+        <div [hidden]="Organization" id="Organizational" #Organizational>
+          <ul>
+            <li class="myLink">
+              <a routerLink="/Home" class="d-block link"
+                >Enterprise Risk Assesment</a
+              >
+            </li>
+            <li class="myLink">
+              <a routerLink="/Home" class="d-block link">Process Engineering</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="heading">
+        <a routerLink="" class="link"
+          >Projects Expected &amp; Planning Services Healthcare
+        </a>
+      </li>
+
+      <li class="heading" (click)="myshow(project.id)">
+        <a routerLink="" class="link"
+          >Projects Expected &amp; Mailstons Achievments</a
+        >
+        <i [class]="projectArrow" class="ms-2"></i>
+        <div [hidden]="projects" id="project" #project>
+          <ul>
+            <li class="myLink">
+              <a routerLink="/Home" class="d-block link">Mailstons</a>
+            </li>
+            <li class="myLink">
+              <a routerLink="/Home" class="d-block link">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="heading">
+        <a routerLink="" class="link">Sample of Selected Clients</a>
+      </li>
+    </ul>
+  </div>
+</div>

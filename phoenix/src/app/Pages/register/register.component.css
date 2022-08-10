@@ -1,0 +1,51 @@
+.is-invalid{
+  border-left: 5px solid #F00;
+}
+.is-valid{
+  border-left: 5px solid #080;
+}
+.registerPage .loginNav{
+  background: #404553;
+  padding-top: 20px;
+}
+.registerPage .loginNav img{
+  height:20vh;
+}
+ .registerSection{
+  background: #404553;
+  min-height: 80vh;
+}
+ .registerSection .myform{
+  position:relative;
+  z-index:2;
+  padding: 20px;
+  width: 70%;
+  margin-top: 20px;
+  background-image: linear-gradient(135deg,rgpa(255,255,255,0.1),rgpa(255,255,255,0));
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 25px;
+}
+ .registerSection .myform .form-label{
+  color:#FFF;
+  font-weight: 600;
+}
+ .registerSection .myform .btn{
+  background-image: linear-gradient(to right, #ea8032, #b73266);
+  color: #FFF;
+  border: none;
+  width: 100px;
+  margin: auto;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+ .registerSection .myform .btn:hover{
+  color: #FFF;
+  background-image: linear-gradient(to left, #ea8032, #b73266);
+}
+@media (max-width:567px) {
+   .registerSection .myform{
+      max-width: 450px;
+  }
+}

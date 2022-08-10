@@ -1,0 +1,41 @@
+.one{
+  padding: 70px 20px;
+}
+.one .icon{
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+.one .item{
+  padding: 30px 0;
+    box-shadow: 0 0 10px #949090;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+}
+.two{
+  background-color: #e8e8e8;
+  padding: 70px 20px;
+}
+.two .item{
+  background-color: #FFF;
+  box-shadow: 0 0 10px #8f8f8f;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+  transition:all 0.5s ease-in-out;
+  width: 90%;
+}
+.two .item:hover{
+transform: scale(1.1);
+}
+.other .myItem p{
+  background-color: #e8e8e8;
+  box-shadow: 0 0 7px #b1afaf;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px auto;
+  transition:all 0.5s ease-in-out;
+  width: 90%;
+}
+.other h5{
+  cursor: pointer;
+}

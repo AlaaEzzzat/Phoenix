@@ -1,0 +1,40 @@
+<div class="loginPage">
+  <div class="loginNav d-flex justify-content-center align-items-center">
+    <img src="./../../../assets/img/logo.png" alt="phoenix" />
+  </div>
+  <div class="loginSection d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center">
+      <form
+        class="myform d-flex flex-column"
+        style="border-style: solid; border-radius: 5px; margin: 50px auto"
+      >
+        <label htmlFor="Email" class="form-label"> Email </label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          #email
+          name="Email"
+          id="Email"
+          placeholder="Enter your Email"
+        />
+        <label htmlFor="password" class="form-label"> Password </label>
+        <input
+          type="password"
+          class="form-control mb-3"
+          #password
+          name="password"
+          id="password"
+          placeholder="Enter your Password"
+        />
+
+        <button
+          [disabled]="isUserLogged"
+          class="btn"
+          (click)="login(email.value, password.value)"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
