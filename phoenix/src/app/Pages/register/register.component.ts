@@ -75,7 +75,7 @@ export class RegisterComponent implements OnInit {
     this.user = this.usrFormGroup.value;
     console.log(this.user);
 
-    this.authService.getUserByEmail(this.user.email).subscribe((founded) => {
+    /* this.authService.getUserByEmail(this.user.email).subscribe((founded) => {
       this.Foundeduser = founded;
       console.log(this.user);
       if (this.Foundeduser.length > 0) {
@@ -91,7 +91,7 @@ export class RegisterComponent implements OnInit {
           },
         });
       }
-    });
+    }); */
   }
   ngOnInit(): void {}
 }

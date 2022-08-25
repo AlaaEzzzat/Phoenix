@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(email: string, password: string) {
-    this.authService.getUserByEmail(email).subscribe((founded) => {
+    /* this.authService.getUserByEmail(email).subscribe((founded) => {
       this.user = founded;
       console.log(this.user);
       if (this.user.length > 0) {
@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
         alert('Not Exist E-mail!');
         this.router.navigate(['/Register']);
       }
-    });
+    }); */
   }
   logout() {
     this.authService.logout();

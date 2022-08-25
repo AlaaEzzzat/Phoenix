@@ -17,11 +17,11 @@ export class AdminService {
     };
   }
 
-  addUser(user: IUser): Observable<IUser> {
+  /*  addUser(user: IUser): Observable<IUser> {
     return this.httpClient.post<IUser>(
       `${environment.ApiUrl}/Users`,
       JSON.stringify(user),
       this.httpOptions
     );
-  }
+  } */
 }

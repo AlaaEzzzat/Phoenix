@@ -18,11 +18,11 @@ export class UserAuthService {
       }),
     };
   }
-  getUserByEmail(email: string): Observable<IUser> {
+  /* getUserByEmail(email: string): Observable<IUser> {
     return this.httpClient.get<IUser>(
       `${environment.ApiUrl}/Users?email=${email}`
     );
-  }
+  } */
   logout() {
     localStorage.removeItem('token');
     this.isUserLoggedSubject.next(false);
