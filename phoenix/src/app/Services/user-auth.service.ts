@@ -34,4 +34,7 @@ export class UserAuthService {
   getUserLoggedStatus(): Observable<boolean> {
     return this.isUserLoggedSubject.asObservable();
   }
+  getToken(): any {
+    return localStorage.getItem('token');
+  }
 }

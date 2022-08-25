@@ -1,0 +1,64 @@
+.home{
+  padding: 70px 20px;
+  background: linear-gradient(to right,#f5a861 0%, #f87c95 50%, #9e70db 100%);
+  color:#FFF;
+}
+.home .badge{
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 16px;
+  padding: 8px;
+  background-color:#604385;
+}
+.home .card{
+  padding:40px 20px 10px 20px;
+  position:relative;
+  box-shadow: 0 0 10px 2px #b3129f;
+transition: all 0.5s ease-in-out;
+  margin: 10px 0
+}
+.home .maincard:hover{
+  transform: scale(1.05);
+}
+.home .card .card-title,
+.home .card .card-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000;
+  font-weight: 500;
+}
+
+.home .head{
+  margin: 30px;
+}
+
+
+
+.home .industry{
+  padding: 30px;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 30px;
+  margin-top: 100px;
+}
+.home .card .title{
+  background: linear-gradient(to right,#f5a861 0%, #f87c95 50%, #9e70db 100%);
+  width: fit-content;
+  padding: 10px 15px;
+  margin-left: 40px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+.home .secondCard .badge{
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  font-size: 16px;
+  padding: 8px ;
+  background-color:#604385;
+}
+
+.home .drivers{
+  padding: 20px;
+  margin-top: 70px;
+}

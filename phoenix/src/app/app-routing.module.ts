@@ -15,6 +15,7 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
+      { path: '', component: HomeComponent },
       {
         path: 'Home',
         component: HomeComponent,
