@@ -1,0 +1,39 @@
+<div class="mailstons">
+  <div class="container">
+    <h2 class="header-con text-center">Summary of Achievements</h2>
+    <ng-container *ngFor="let item of data; let i = index">
+      <div
+        class="row"
+        [ngStyle]="{
+          'flex-direction': (i + 1) % 2 == 1 ? 'row' : 'row-reverse'
+        }"
+      >
+        <div class="col-md-6 item" [ngClass]="(i + 1) % 2 == 1 ? 'one' : 'two'">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  style="height: 100px"
+                  [src]="item.img"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{ item.title }}</h5>
+                  <p class="card-text">{{ item.subTitle }}</p>
+                  <p class="card-text">
+                    <small class="text-muted">{{ item.year }}</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

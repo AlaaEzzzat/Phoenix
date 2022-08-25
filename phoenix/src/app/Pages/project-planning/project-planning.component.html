@@ -1,0 +1,43 @@
+<div class="projectPlanning">
+  <div class="container-fluid">
+    <h2 class="text-center mb-5 head">
+      Consultants Healthcare Planning Services
+    </h2>
+    <div class="row d-flex justify-content-center">
+      <div class="col-10">
+        <p class="text-center mb-3 pHead">
+          Our healthcare planning services focus on providing support in the
+          very early phases of planning during which an organization is
+          determining the need and feasibility of selected healthcare services.
+          PLSI-FZCO's objective in this phase is to assist in meeting the
+          community's needs by helping determine a gap analysis, the appropriate
+          size & services required.
+        </p>
+      </div>
+      <div class="col-10">
+        <p class="text-center mb-4 pHead">
+          PLSI-FZCO has been consulted for many turnkeyhospital development
+          projects throughout the project life cycle (Vision - Invest & Funding
+          - Design - Build - Equip - Licensing - Recruit & Integrate - Manage &
+          Operate). This is further to conducting due diligence for many
+          hospitals to improve their profitability, therefore transforming near
+          to bankrupt hospitals to highly profitable healthcare operations
+          through eliminating unnecessary redundancies then undertaking interim
+          management to operate these hospitals during the change management &
+          transformation process.
+        </p>
+      </div>
+      <ng-container *ngFor="let item of data; let i = index">
+        <div class="col-md-8">
+          <div class="card">
+            <span class="badge">{{ i + 1 }}</span>
+            <div>
+              <h4 class="title">{{ item.title }}</h4>
+              <p class="subtitle">{{ item.content }}</p>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

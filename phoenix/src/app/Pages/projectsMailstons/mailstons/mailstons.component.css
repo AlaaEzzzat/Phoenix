@@ -1,0 +1,73 @@
+
+.mailstons{
+  padding: 70px 20px;
+  background: linear-gradient(to right,#f5a861 0%, #f87c95 50%, #9e70db 100%);
+}
+.mailstons .header-con {
+  margin: 40px 0;
+}
+.mailstons .item {
+  position: relative;
+}
+.mailstons .item::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border: 0;
+  background: linear-gradient(to right, #FC466B 0%, #3F5EFB 100%);
+  z-index: 3;
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px #FFF;
+}
+.mailstons .one::after {
+  right: -5px;
+}
+
+.mailstons .two::after {
+  left: -5px;
+}
+.mailstons .one {
+
+  border-right: 1px solid #FC466B;
+  position: relative;
+}
+.mailstons .two {
+  border-left: 1px solid #3F5EFB;
+  margin-right: 1px;
+}
+.mailstons .card{
+  position: relative;
+  background-color: #e8e8e8;
+  border: 1px solid #3F5EFB;
+  color: #000;
+  padding: 10px;
+  box-shadow: 0px 0 8px #FC466B;
+  transition: all 0.5s ease-in-out;
+}
+.mailstons .card:hover{
+  transform: scale(1.02);
+}
+.mailstons .card .card-title{
+  font-size: 18px;
+  line-height: 1.7;
+}
+@media (max-width: 767px) {
+
+  .mailstons .item {
+    border: none;
+    border-left: 1px solid #FC466B;
+}
+.mailstons .one::after {
+  left: -5px;
+}
+.mailstons .two {
+  margin-right: 0;
+
+}
+.mailstons .two .card {
+    margin: 15px 0;
+}
+}

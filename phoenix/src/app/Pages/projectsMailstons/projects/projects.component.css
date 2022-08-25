@@ -1,0 +1,63 @@
+.projects{
+  padding: 70px 20px;
+  background: linear-gradient(to right,#f5a861 0%, #f87c95 50%, #9e70db 100%);
+  color:#FFF;
+}
+.projects .badge{
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 16px;
+  padding: 8px;
+  background-color:#604385;
+}
+.projects .card{
+  padding:40px 20px 10px 20px;
+  position:relative;
+  box-shadow: 0 0 10px 2px #b3129f;
+transition: all 0.5s ease-in-out;
+  margin: 10px 0
+}
+.projects .maincard:hover{
+  transform: scale(1.05);
+}
+.projects .card .card-title,
+.projects .card .card-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000;
+  font-weight: 500;
+}
+.projects .inner-card .card-title{
+  background: linear-gradient(to right,#f5a861 0%, #f87c95 50%, #9e70db 100%);
+  width: fit-content;
+  padding: 10px 15px;
+  margin-left: 40px;
+  border-radius: 15px;
+}
+.projects .inner-card .badge{
+  top: 47px;
+}
+.projects .head{
+  margin-top: 30px;
+}
+
+.projects .inner-card li{
+  padding: 15px 10px ;
+  transition: all 0.5s ease-in-out;
+  background-color: #c5c5c5;
+  border-radius: 15px;
+  position: relative;
+}
+.projects .inner-card li:hover{
+  transform: scale(1.03);
+}
+.projects .inner-card li .sub-badge{
+  padding: 5px 8px;
+    background: rgb(133, 11, 214);
+    border-radius: 5px;
+    position: absolute;
+}
+.projects .inner-card li  p{
+  margin-left: 33px;
+}

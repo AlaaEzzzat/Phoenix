@@ -1,1 +1,32 @@
-<p>contact works!</p>
+<section id="contact">
+  <div class="contact-box">
+    <div class="contact-logo">
+      <h2>CONTACT</h2>
+      <div class="logo">
+        <img src="./../../../assets/img/logo.png" alt="img" />
+      </div>
+    </div>
+    <div class="contact-form-wrapper">
+      <form>
+        <div class="form-item">
+          <input type="text" name="sender" #sender required />
+          <label>Name:</label>
+        </div>
+        <div class="form-item">
+          <input type="text" name="email" #email required />
+          <label>Email:</label>
+        </div>
+        <div class="form-item">
+          <textarea class="" name="message" #message required></textarea>
+          <label>Message:</label>
+        </div>
+        <button
+          class="submit-btn"
+          (click)="sendMsg(sender.value, email.value, message.value)"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

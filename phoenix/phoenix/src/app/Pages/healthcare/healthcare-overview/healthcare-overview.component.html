@@ -1,0 +1,173 @@
+<div class="one text-center">
+  <div class="container-fluid pt-5">
+    <h2 class="p-5">Healthcare Planning</h2>
+    <div class="row">
+      <div class="col-md-3 mb-3">
+        <div class="item">
+          <i class="icon fa fa-pencil" aria-hidden="true"></i>
+          <h4>Strategic Planning</h4>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="item">
+          <i class="icon fa fa-book" aria-hidden="true"></i>
+          <h4>Feasibility Studies</h4>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="item">
+          <i class="icon fa fa-usd" aria-hidden="true"></i>
+          <h4>Project Financing</h4>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="item">
+          <i class="icon fa fa-recycle" aria-hidden="true"></i>
+          <h4>Operations Improvement</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ************************ -->
+
+<div class="two pt-5 pb-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 mb-5">
+        <h2 class="text-center mb-5">Facility Planning</h2>
+        <ul class="list-unstyled">
+          <li class="item">MasterPlanning.</li>
+          <li class="item">Functional and SpaceProgramming.</li>
+          <li class="item">
+            Biomedical Equipment life cycle management, planning, commissioning,
+            procurement and leasing.
+          </li>
+          <li class="item">Schematic Design Support.</li>
+          <li class="item">
+            Application submissions, preliminary and final license approvals
+            including mock audits.
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="other">
+          <h2 class="text-center mb-5">Other</h2>
+          <div class="accordion">
+            <ul class="p-0 accordion list-unstyled">
+              <li class="heading accordion-item p-2" (click)="myshow(one.id)">
+                <div class="p-2">
+                  <h5 class="d-inline">
+                    Pre-Opening Planning and Commissioning
+                  </h5>
+                  <i [class]="oneArrow" class="ms-2"></i>
+                </div>
+                <div [hidden]="itemOne" id="one" #one>
+                  <ul class="list-unstyled">
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Staff Recruitment, Training & Integration.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Development of Operational Processes and Systems.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Preparation of Policies and Procedures.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Clinical, Safety and Emergency Simulations.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        International Accreditation Planning
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="heading accordion-item p-2" (click)="myshow(two.id)">
+                <div class="p-2">
+                  <h5 class="d-inline-block">
+                    Hospital Management & Operations
+                  </h5>
+                  <i [class]="twoArrow" class="ms-2"></i>
+                </div>
+                <div [hidden]="itemTwo" id="two" #two>
+                  <ul class="list-unstyled">
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Hospital Operations independently and through
+                        international hospital operators.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Staff Training, Motivational & Talent Retention
+                        programs.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Total Quality Management and International Accreditation
+                        i.e. JCI, TEMOS, GHA [Medical Tourism], CAP, ISO 15189,
+                        12025, 17025.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Mentoring and Transitioning to a Local Management Team.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="heading accordion-item p-2" (click)="myshow(three.id)">
+                <div class="p-2">
+                  <h5 class="d-inline-block">
+                    Staffing, Education and Training
+                  </h5>
+                  <i [class]="threeArrow" class="ms-2"></i>
+                </div>
+                <div [hidden]="itemThree" id="three" #three>
+                  <ul class="list-unstyled">
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Comprehensive staffing solutions from different
+                        countries across the world.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Nursing, Management and Allied Health Training.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Continuous Medical Education, Continuous Professional
+                        Development through simulation training programs.
+                      </p>
+                    </li>
+                    <li class="myItem">
+                      <p class="d-block link">
+                        Affiliations with U.S., EU Universities, global hospital
+                        operators & healthcare management groups.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.genetic{
+  padding-top: 80px;
+}
+
+.genetic .section{
+padding:  50px 20px;
+}
+.genetic .section .head{
+  margin-bottom: 30px;
+}
+.genetic .section p{
+  padding: 20px;
+  border:1px solid #616060 ;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 2px #b3129f;
+}
+.genetic .gray{
+  background-color: rgb(240, 240, 240);
+}
+.genetic .img{
+  width: 60%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px 2px #616060;
+  margin-bottom: 20px;
+}
+.genetic .img:hover{
+  transform: scale(1.1);
+
+}
+

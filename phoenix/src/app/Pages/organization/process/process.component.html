@@ -1,0 +1,18 @@
+<div class="orgProcess">
+  <div class="container-fluid">
+    <h2 class="text-center mb-5 head">
+      Process Engineering, Improvement & Business Innovation of Hospital
+      Operations
+    </h2>
+    <div class="row">
+      <ng-container *ngFor="let item of data; let i = index">
+        <div class="col-md-4">
+          <div class="card">
+            <span class="badge">{{ i + 1 }}</span>
+            <p class="card-title">{{ item }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

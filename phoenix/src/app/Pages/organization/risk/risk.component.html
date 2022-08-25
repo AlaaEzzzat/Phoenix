@@ -1,0 +1,24 @@
+<div class="risk">
+  <div class="container-fluid">
+    <h3 class="text-center mb-4">
+      Enterprise Risk Assessment, Governance & Compliance
+    </h3>
+    <div class="row d-flex justify-content-center">
+      <h5 class="col-10 mb-5">
+        Assess the principal risks of the organization and to ensure that these
+        risks are being monitored and managed; recommend annual budget for board
+        approval and overviews the management of the organization's resources
+        with the leadership support team within those budget guidelines
+        according to local applicable laws and regulations.
+      </h5>
+      <ng-container *ngFor="let item of data; let i = index">
+        <div class="col-8">
+          <div class="card">
+            <span class="badge">{{ i + 1 }}</span>
+            <p class="card-title">{{ item }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

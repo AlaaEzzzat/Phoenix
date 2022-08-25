@@ -1,0 +1,31 @@
+.lifeOverview{
+  padding: 70px 20px;
+  background: linear-gradient(to right,#f5a861 0%, #f87c95 50%, #9e70db 100%);
+  color:#FFF;
+}
+.lifeOverview .badge{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color:#604385;
+}
+.lifeOverview .card{
+  padding:30px 20px 20px 20px;
+  position:relative;
+  box-shadow: 0 0 10px 2px #b3129f;
+transition: all 0.5s ease-in-out;
+  margin: 10px 0
+}
+.lifeOverview .card:hover{
+  transform: scale(1.05);
+}
+.lifeOverview .card .card-title{
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000;
+  font-weight: 500;
+
+}
+.lifeOverview .head{
+  margin-top: 30px;
+}

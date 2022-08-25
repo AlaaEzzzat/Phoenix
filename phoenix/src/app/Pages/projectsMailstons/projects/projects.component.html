@@ -1,0 +1,55 @@
+<div class="projects">
+  <div class="container-fluid">
+    <h1 class="text-center mb-5 head">
+      Selected Key Healthcare Projects Executed & Engaged In
+    </h1>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <span class="badge">1</span>
+          <p class="card-title">
+            Green Field & Turnkeydevelopment of many hospital projects in the
+            EMEA, Asia & Latin America. Consulting for hospital projects during
+            the planning phase involving the review of architectural designs,
+            gap analysis according to market trends & needs, preselection of
+            revenue generating therapeutic specialties, reviewing feasibility
+            studies & business plans to comply with health regulator's vision &
+            healthcare strategy to sustain a long-term profitable operation for
+            these organizations.
+          </p>
+          <div class="row d-flex justify-content-center">
+            <ng-container *ngFor="let item of countries; let i = index">
+              <div class="col-12">
+                <div class="card inner-card">
+                  <span class="badge">{{ i + 1 }}</span>
+                  <div>
+                    <h4 class="card-title">{{ item.state }}</h4>
+                    <ul
+                      class="sub-card"
+                      *ngFor="let p of item.text; let x = index"
+                    >
+                      <li>
+                        <span class="sub-badge">{{ x + 1 }}</span>
+                        <p class="card-text">{{ p }}</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <ng-container *ngFor="let item of data; let i = index">
+        <div class="col-md-8">
+          <div class="card maincard">
+            <span class="badge">{{ i + 2 }}</span>
+            <p class="card-title">{{ item }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

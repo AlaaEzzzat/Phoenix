@@ -1,0 +1,27 @@
+<div class="selectedClients">
+  <div class="container-fluid">
+    <h1 class="text-center mb-5 head">Sample of Selected Clients</h1>
+    <div class="row pb-5">
+      <h3>Healthcare</h3>
+      <ng-container *ngFor="let item of healthcare; let i = index">
+        <div class="col-md-6">
+          <div class="card">
+            <span class="badge">{{ i + 1 }}</span>
+            <p class="card-title">{{ item }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="row mt-5">
+      <h3>Life Sciences</h3>
+      <ng-container *ngFor="let item of lifeScience; let i = index">
+        <div class="col-md-4">
+          <div class="card">
+            <span class="badge">{{ i + 1 }}</span>
+            <p class="card-title">{{ item }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
