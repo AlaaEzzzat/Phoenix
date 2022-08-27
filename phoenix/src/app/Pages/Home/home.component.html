@@ -1,11 +1,24 @@
 <div class="home">
   <div class="container-fluid">
     <div class="itro">
-      <h2 class="head text-center">Who We Are ?</h2>
+      <h2
+        class="head text-center wow flash"
+        data-wow-duration="1.5s"
+        data-wow-offset="100"
+        data-wow-delay="0.5s"
+      >
+        Who We Are ?
+      </h2>
       <div class="row d-flex justify-content-center">
         <ng-container *ngFor="let item of intro; let i = index">
           <div class="col-md-8">
-            <div class="card maincard">
+            <div
+              class="card maincard wow bounceInLeft"
+              [ngClass]="(i + 1) % 2 == 1 ? 'bounceInLeft' : 'bounceInRight'"
+              data-wow-duration="1s"
+              data-wow-delay="1s"
+              data-wow-offset="0"
+            >
               <p class="badge">{{ i + 1 }}</p>
               <p class="card-title">{{ item }}</p>
             </div>
@@ -15,8 +28,20 @@
     </div>
 
     <div class="industry">
-      <h2 class="head text-center">Healthcare Industry</h2>
-      <p>
+      <h2
+        class="head text-center wow flash"
+        data-wow-duration="1.5s"
+        data-wow-offset="100"
+        data-wow-delay="0.5s"
+      >
+        Healthcare Industry
+      </h2>
+      <p
+        class="text wow bounceInLeft"
+        data-wow-duration="1s"
+        data-wow-delay="1s"
+        data-wow-offset="0"
+      >
         PLSI-FZCO's professionals have 100 years of combined global experience
         within the multinational healthcare industry in management, turnkey and
         green-field hospital projects, hospital operations, project funding,
@@ -33,11 +58,24 @@
     </div>
 
     <div class="drivers">
-      <h2 class="head text-center">WHAT MAKES US THRIVE</h2>
+      <h2
+        class="head text-center wow flash"
+        data-wow-duration="1.5s"
+        data-wow-offset="100"
+        data-wow-delay="0.5s"
+      >
+        WHAT MAKES US THRIVE
+      </h2>
       <div class="row d-flex justify-content-center align-items-center">
         <ng-container *ngFor="let item of drivers; let i = index">
           <div class="col-md-8">
-            <div class="card secondCard">
+            <div
+              class="card secondCard wow"
+              [ngClass]="(i + 1) % 2 == 1 ? 'bounceInLeft' : 'bounceInRight'"
+              data-wow-duration="1.5s"
+              data-wow-offset="100"
+              data-wow-delay="0.5s"
+            >
               <span class="badge">{{ i + 1 }}</span>
               <div>
                 <h4 class="title">{{ item.name }}</h4>

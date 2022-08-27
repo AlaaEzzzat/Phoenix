@@ -19,6 +19,8 @@ import { RegisterComponent } from './Pages/register/register.component';
 import { GeneticComponent } from './Pages/genetic/genetic.component';
 import { ProjectPlanningComponent } from './Pages/project-planning/project-planning.component';
 import { SelectedClientsComponent } from './Pages/selected-clients/selected-clients.component';
+import { NgwWowModule } from 'ngx-wow';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { SelectedClientsComponent } from './Pages/selected-clients/selected-clie
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    NgwWowModule,
     CommonModule,
     AppRoutingModule,
     FormsModule,

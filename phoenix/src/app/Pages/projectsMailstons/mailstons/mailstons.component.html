@@ -1,6 +1,13 @@
 <div class="mailstons">
   <div class="container">
-    <h2 class="header-con text-center">Summary of Achievements</h2>
+    <h2
+      class="header-con text-center wow flash"
+      data-wow-duration="1.5s"
+      data-wow-offset="100"
+      data-wow-delay="0.5s"
+    >
+      Summary of Achievements
+    </h2>
     <ng-container *ngFor="let item of data; let i = index">
       <div
         class="row"
@@ -8,7 +15,13 @@
           'flex-direction': (i + 1) % 2 == 1 ? 'row' : 'row-reverse'
         }"
       >
-        <div class="col-md-6 item" [ngClass]="(i + 1) % 2 == 1 ? 'one' : 'two'">
+        <div
+          class="col-md-6 item wow"
+          [ngClass]="(i + 1) % 2 == 1 ? 'one bounceInDown' : 'two bounceInUp'"
+          data-wow-duration="1.5s"
+          data-wow-offset="100"
+          data-wow-delay="0.5s"
+        >
           <div class="card mb-3" style="max-width: 540px">
             <div class="row g-0">
               <div

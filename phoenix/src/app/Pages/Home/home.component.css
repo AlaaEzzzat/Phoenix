@@ -1,6 +1,6 @@
 .home{
   padding: 70px 20px;
-  background: linear-gradient(to right,#f5a861 0%, #f87c95 50%, #9e70db 100%);
+  background: linear-gradient(to right, #f87c95 0%, #9e70db 100%);
   color:#FFF;
 }
 .home .badge{
@@ -22,7 +22,8 @@ transition: all 0.5s ease-in-out;
   transform: scale(1.05);
 }
 .home .card .card-title,
-.home .card .card-text {
+.home .card .card-text,
+.industry .text {
   font-size: 16px;
   line-height: 1.7;
   color: #000;
@@ -36,13 +37,14 @@ transition: all 0.5s ease-in-out;
 
 
 .home .industry{
+  color: #000;
   padding: 30px;
   background-color: rgba(0,0,0,.1);
   border-radius: 30px;
   margin-top: 100px;
 }
 .home .card .title{
-  background: linear-gradient(to right,#f5a861 0%, #f87c95 50%, #9e70db 100%);
+  background: linear-gradient(to right, #f87c95 0%, #9e70db 100%);
   width: fit-content;
   padding: 10px 15px;
   margin-left: 40px;

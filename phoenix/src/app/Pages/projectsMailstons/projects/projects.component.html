@@ -1,6 +1,11 @@
 <div class="projects">
   <div class="container-fluid">
-    <h1 class="text-center mb-5 head">
+    <h1
+      class="text-center mb-5 head wow flash"
+      data-wow-duration="1.5s"
+      data-wow-offset="100"
+      data-wow-delay="0.5s"
+    >
       Selected Key Healthcare Projects Executed & Engaged In
     </h1>
     <div class="row d-flex justify-content-center">
@@ -19,7 +24,12 @@
           </p>
           <div class="row d-flex justify-content-center">
             <ng-container *ngFor="let item of countries; let i = index">
-              <div class="col-12">
+              <div
+                class="col-12 wow bounceIn"
+                data-wow-duration="1.5s"
+                data-wow-offset="100"
+                data-wow-delay="0.5s"
+              >
                 <div class="card inner-card">
                   <span class="badge">{{ i + 1 }}</span>
                   <div>
@@ -28,7 +38,15 @@
                       class="sub-card"
                       *ngFor="let p of item.text; let x = index"
                     >
-                      <li>
+                      <li
+                        class="wow"
+                        data-wow-duration="1.5s"
+                        data-wow-offset="100"
+                        data-wow-delay="0.5s"
+                        [ngClass]="
+                          x + (1 % 2) == 1 ? 'bounceInLeft' : 'bounceInLeft'
+                        "
+                      >
                         <span class="sub-badge">{{ x + 1 }}</span>
                         <p class="card-text">{{ p }}</p>
                       </li>
@@ -43,7 +61,13 @@
     </div>
     <div class="row d-flex justify-content-center">
       <ng-container *ngFor="let item of data; let i = index">
-        <div class="col-md-8">
+        <div
+          class="col-md-8 wow"
+          data-wow-duration="1.5s"
+          data-wow-offset="100"
+          data-wow-delay="0.5s"
+          [ngClass]="(i + 1) % 2 == 1 ? 'bounceInLeft' : 'bounceInRight'"
+        >
           <div class="card maincard">
             <span class="badge">{{ i + 2 }}</span>
             <p class="card-title">{{ item }}</p>

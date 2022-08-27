@@ -1,6 +1,13 @@
 <div class="models">
   <div class="container-fluid">
-    <h1 class="head text-center">Life Sciences Business Models Adopted</h1>
+    <h1
+      class="head text-center wow bounceIn"
+      data-wow-duration="1.5s"
+      data-wow-offset="100"
+      data-wow-delay="0.5s"
+    >
+      Life Sciences Business Models Adopted
+    </h1>
     <ng-container *ngFor="let item of modelItems; let i = index">
       <div
         class="model"
@@ -12,8 +19,21 @@
             'flex-direction': (i + 1) % 2 == 1 ? 'row' : 'row-reverse'
           }"
         >
-          <h5 class="header text-center">{{ item.title }}</h5>
-          <div class="col-md-6">
+          <h5
+            class="header text-center wow flash"
+            data-wow-duration="1.5s"
+            data-wow-offset="100"
+            data-wow-delay="0.5s"
+          >
+            {{ item.title }}
+          </h5>
+          <div
+            class="col-md-6 wow bounceInLeft"
+            [ngClass]="(i + 1) % 2 == 1 ? ' bounceInLeft' : ' bounceInRight'"
+            data-wow-duration="1.5s"
+            data-wow-offset="100"
+            data-wow-delay="0.5s"
+          >
             <div class="card">
               <ul>
                 <ng-container *ngFor="let desc of item.desc; let y = index">
@@ -22,7 +42,13 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6">
+          <div
+            class="col-md-6 wow"
+            [ngClass]="(i + 1) % 2 == 1 ? ' bounceInRight' : 'two bounceInLeft'"
+            data-wow-duration="1.5s"
+            data-wow-offset="100"
+            data-wow-delay="0.5s"
+          >
             <div
               class="imgCon d-flex justify-content-center align-items-center"
             >

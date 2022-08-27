@@ -1,9 +1,19 @@
 <div class="projectPlanning">
   <div class="container-fluid">
-    <h2 class="text-center mb-5 head">
+    <h2
+      class="text-center mb-5 head wow flash"
+      data-wow-duration="1.5s"
+      data-wow-offset="100"
+      data-wow-delay="0.5s"
+    >
       Consultants Healthcare Planning Services
     </h2>
-    <div class="row d-flex justify-content-center">
+    <div
+      class="row d-flex justify-content-center wow shake"
+      data-wow-duration="1.5s"
+      data-wow-offset="100"
+      data-wow-delay="0.5s"
+    >
       <div class="col-10">
         <p class="text-center mb-3 pHead">
           Our healthcare planning services focus on providing support in the
@@ -28,7 +38,13 @@
         </p>
       </div>
       <ng-container *ngFor="let item of data; let i = index">
-        <div class="col-md-8">
+        <div
+          class="col-md-8 wow"
+          data-wow-duration="1.5s"
+          data-wow-offset="100"
+          data-wow-delay="0.5s"
+          [ngClass]="(i + 1) % 2 == 1 ? 'bounceInLeft' : 'bounceInRight'"
+        >
           <div class="card">
             <span class="badge">{{ i + 1 }}</span>
             <div>
